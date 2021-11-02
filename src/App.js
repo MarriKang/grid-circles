@@ -9,7 +9,7 @@ function App() {
   const freeSpiritLayout = ['smallest', 'small', 'small', 'largest', 'large', 'large', 'smallest', 'small', 'smallest'];
   const achieverLayout = ['largest', 'small', 'smallest', 'smallest', 'large', 'largest', 'large', 'small', 'small'];
   const caregiverLayout = ['smallest', 'small', 'largest', 'small', 'smallest', 'smallest', 'small', 'large', 'small'];
-  const unselectedLayout = [];
+  const unselectedLayout = ['empty', 'empty', 'empty', 'empty', 'empty', 'empty', 'empty', 'empty', 'empty'];
   let currLayout;
 
   switch (menuOption) {
@@ -34,12 +34,14 @@ function App() {
         <button onClick={() => setMenuOption('caregiver')} className="menu-button">Caregiver</button>
       </div>
       <div className="outer-circle-container">
-        {outerCircleNames.map(name => {
-          return <OuterCircle key={name} name={name}/>
+        {outerCircleNames.map((name, currIndex) => {
+          return (
+            <OuterCircle key={name} name={name} index={currIndex} currLayout={currLayout}/> 
+          )
         })}
       </div>
     </div>
-  );
+  )
 }
 
 export default App;

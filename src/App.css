@@ -18,33 +18,80 @@ body {
   padding: 15px 30px 15px 30px;
 }
 
+.menu-button:focus {
+  color: #051c2c;
+  background-color: white;
+}
+
 .outer-circle-container {
   display: inline-grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 20px 20px;
+  gap: 20px 20px;
   justify-content: center;
 }
 
 .outer-circle {
   height: 166px;
   width: 166px;
-  background-color: none;
+  background-color: transparent;
   border-style: solid;
   border-width: 2px;
   border-radius: 50%;
+  box-sizing: border-box;
   color: white;
   text-align: center;
   line-height: 166px;
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.smallest {
+  width: 38px;
+  height: 38px;
+  background-color: #00a9f4;
+  border-radius: 50%;
+  opacity: 0.2;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -19px 0px 0px -19px;
+}
+
+.small {
+  width: 79px;
+  height: 79px;
+  background-color: #00a9f4;
+  border-radius: 50%;
+  opacity: 0.4;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -39.5px 0px 0px -39.5px;
+}
+
+.large {
+  width: 121px;
+  height: 121px;
+  background-color: #00a9f4;
+  border-radius: 50%;
+  opacity: 0.7;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -60.5px 0px 0px -60.5px;
+}
+
+.largest {
+  width: 162px;
+  height: 162px;
+  background-color: #00a9f4;
+  border-radius: 50%;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -81px 0px 0px -81px;
 }
 
