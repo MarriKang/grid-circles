@@ -1,10 +1,10 @@
 import './App.css';
 import { useState } from 'react';
-import OuterCircle from './OuterCircle';
+import Circles from './Circles';
 
 function App() {
 
-  const [menuOption, setMenuOption] = useState('none')
+  const [menuOption, setMenuOption] = useState('')
   const outerCircleNames = ['Achievement', 'Conservation', 'Caring', 'Freedom', 'Respect', 'Tradition', 'Enjoyment', 'Stability', 'Equality/Justice'];
   const freeSpiritLayout = ['smallest', 'small', 'small', 'largest', 'large', 'large', 'smallest', 'small', 'smallest'];
   const achieverLayout = ['largest', 'small', 'smallest', 'smallest', 'large', 'largest', 'large', 'small', 'small'];
@@ -36,7 +36,7 @@ function App() {
       <div className="outer-circle-container">
         {outerCircleNames.map((name, currIndex) => {
           return (
-            <OuterCircle key={name} name={name} index={currIndex} currLayout={currLayout}/> 
+            <Circles key={name} name={name} index={currIndex} currLayout={currLayout}/> 
           )
         })}
       </div>

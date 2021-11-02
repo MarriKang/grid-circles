@@ -1,6 +1,6 @@
 import React from 'react';
 
-const OuterCircle = (props) => {
+const Circles = (props) => {
     const innerCircleClass = props.currLayout[props.index];
 
     return (
@@ -11,4 +11,4 @@ const OuterCircle = (props) => {
     )
 }
 
-export default OuterCircle;
+export default Circles;
