@@ -1,10 +1,15 @@
+:root {
+  --bg-color: #051c2c;
+  --inner-circle-blue: #00a9f4;
+}
+
 .App {
   text-align: center;
 }
 
 body {
   font-size: 16px;
-  background-color:#051c2c;
+  background-color: var(--bg-color);
 }
 
 .button-container {
@@ -20,7 +25,7 @@ body {
 }
 
 .menu-button:focus {
-  color: #051c2c;
+  color: var(--bg-color);
   background-color: white;
 }
 
@@ -57,7 +62,7 @@ body {
 .smallest {
   width: 38px;
   height: 38px;
-  background-color: #00a9f4;
+  background-color: var(--inner-circle-blue);
   border-radius: 50%;
   opacity: 0.2;
   z-index: -1;
@@ -71,7 +76,7 @@ body {
 .small {
   width: 79px;
   height: 79px;
-  background-color: #00a9f4;
+  background-color: var(--inner-circle-blue);
   border-radius: 50%;
   opacity: 0.4;
   z-index: -1;
@@ -85,7 +90,7 @@ body {
 .large {
   width: 121px;
   height: 121px;
-  background-color: #00a9f4;
+  background-color: var(--inner-circle-blue);
   border-radius: 50%;
   opacity: 0.7;
   z-index: -1;
@@ -99,7 +104,7 @@ body {
 .largest {
   width: 162px;
   height: 162px;
-  background-color: #00a9f4;
+  background-color: var(--inner-circle-blue);
   border-radius: 50%;
   z-index: -1;
   position: absolute;
