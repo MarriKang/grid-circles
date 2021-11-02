@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color:#051c2c;
+}
+
+.button-container {
+  margin: 50px;
+}
+
+.menu-button {
+  background-color: transparent;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  padding: 15px 30px 15px 30px;
+}
+
+.outer-circle-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px 20px;
+  justify-content: center;
+}
+
+.outer-circle {
+  height: 166px;
+  width: 166px;
+  background-color: none;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 166px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
