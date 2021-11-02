@@ -3,6 +3,7 @@
 }
 
 body {
+  font-size: 16px;
   background-color:#051c2c;
 }
 
@@ -44,6 +45,15 @@ body {
   position: relative;
 }
 
+.empty {
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transition: all 1s ease;
+}
+
 .smallest {
   width: 38px;
   height: 38px;
@@ -55,6 +65,7 @@ body {
   top: 50%;
   left: 50%;
   margin: -19px 0px 0px -19px;
+  transition: all 1s ease;
 }
 
 .small {
@@ -68,6 +79,7 @@ body {
   top: 50%;
   left: 50%;
   margin: -39.5px 0px 0px -39.5px;
+  transition: all 1s ease;
 }
 
 .large {
@@ -81,6 +93,7 @@ body {
   top: 50%;
   left: 50%;
   margin: -60.5px 0px 0px -60.5px;
+  transition: all 1s ease;
 }
 
 .largest {
@@ -93,5 +106,6 @@ body {
   top: 50%;
   left: 50%;
   margin: -81px 0px 0px -81px;
+  transition: all 1s ease;
 }
 
